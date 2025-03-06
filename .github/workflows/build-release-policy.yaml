@@ -38,7 +38,7 @@ jobs:
           tags="$tags ${{ steps.config.outputs.repo }}:$tag"
         done < <(echo "${{ steps.sver.outputs.version }}")
 
-        run: echo "target_tags::$tags" >> $GITHUB_OUTPUT
+        echo "target_tags::$tags" >> $GITHUB_OUTPUT
 
     - name: Policy Login
       id: policy-login
