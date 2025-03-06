@@ -1,0 +1,28 @@
+{
+    "roles": {
+      "viewer": {
+        "description": "A viewer with no access to sensitive asset",
+        "perms": {
+          "asertodemo.GET.api.protected": {
+            "allowed": false
+          }
+        }
+      },
+      "editor": {
+        "description": "A editor with access to sensitive asset",
+        "perms": {
+          "asertodemo.GET.api.protected": {
+            "allowed": true
+          }
+        }
+      },
+      "admin": {
+        "description": "An admin user with access to sensitive asset",
+        "perms": {
+          "asertodemo.GET.api.protected": {
+            "allowed": true
+          }
+        }
+      }
+    }
+  }
