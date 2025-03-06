@@ -38,8 +38,6 @@ jobs:
           tags="$tags ${{ steps.config.outputs.repo }}:$tag"
         done < <(echo "${{ steps.sver.outputs.version }}")
 
-        echo "target_tags::$tags" >> $GITHUB_OUTPUT
-
     - name: Policy Login
       id: policy-login
       uses: opcr-io/policy-login-action@v3
