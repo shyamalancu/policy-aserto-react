@@ -4,7 +4,9 @@
         "description": "A viewer with no access to sensitive asset",
         "perms": {
           "asertodemo.GET.api.protected": {
-            "allowed": false
+            "allowed": false,
+            "enabled": false,
+            "visible": false
           }
         }
       },
@@ -12,7 +14,9 @@
         "description": "A editor with access to sensitive asset",
         "perms": {
           "asertodemo.GET.api.protected": {
-            "allowed": true
+            "allowed": false,
+            "enabled": true,
+            "visible": false
           }
         }
       },
@@ -20,7 +24,9 @@
         "description": "An admin user with access to sensitive asset",
         "perms": {
           "asertodemo.GET.api.protected": {
-            "allowed": true
+            "allowed": true,
+            "enabled": true,
+            "visible": true
           }
         }
       }
